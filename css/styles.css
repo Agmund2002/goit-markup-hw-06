@@ -674,15 +674,25 @@ ul {
   outline: transparent;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  padding: 0;
-  padding-left: 42px;
+  padding: 0 42px;
   margin-bottom: 10px;
+  transition: border-color var(--main-animation);
+}
+
+.order-form-input:focus,
+.order-form-comment:focus {
+  border-color: var(--accent-color);
 }
 
 .order-form-icon {
   position: absolute;
   top: 33px;
   left: 12px;
+  transition: fill var(--main-animation);
+}
+
+.order-form-input:focus + .order-form-icon {
+  fill: var(--accent-color);
 }
 
 .order-form-comment {
@@ -694,6 +704,7 @@ ul {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding: 12px 16px;
+  transition: border-color var(--main-animation);
 }
 
 ::placeholder {
@@ -763,4 +774,11 @@ ul {
   line-height: calc(30/16);
   letter-spacing: 0.06em;
   color: var(--secondary-title-color);
+  transition: background-color var(--main-animation);
+}
+
+.order-form-btn:hover,
+.order-form-btn:focus {
+  cursor: pointer;
+  background-color: #188CE8;
 }
