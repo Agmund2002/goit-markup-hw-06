@@ -358,8 +358,7 @@ ul {
   color: var(--icon-color);
   fill: currentColor;
 
-  transition: color var(--main-animation),
-    background-color var(--main-animation);
+  transition: color var(--main-animation), background-color var(--main-animation);
 }
 
 .socials-link:hover,
@@ -392,8 +391,7 @@ ul {
   border-radius: 4px;
   fill: currentColor;
 
-  transition: color var(--main-animation),
-    border-color var(--main-animation);
+  transition: color var(--main-animation), border-color var(--main-animation);
 }
 
 .clients-list-item > a:hover,
@@ -424,8 +422,7 @@ ul {
   border: 0;
   padding: 6px 22px;
 
-  transition: color var(--main-animation),
-    background-color var(--main-animation),
+  transition: color var(--main-animation), background-color var(--main-animation),
     box-shadow var(--main-animation);
 }
 
@@ -596,8 +593,7 @@ ul {
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 10;
 
-  transition: visibility var(--main-animation),
-  opacity var(--main-animation);
+  transition: visibility var(--main-animation), opacity var(--main-animation);
 }
 
 .backdrop.is-hidden {
@@ -612,11 +608,11 @@ ul {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 528px;
-  height: 581px;
   background-color: var(--root-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  padding: 40px;
 }
 
 .modal-btn {
@@ -644,4 +640,127 @@ ul {
 
 .close {
   fill: currentColor;
+}
+
+.order-form-title {
+  display: block;
+  font-size: 20px;
+  line-height: calc(23 / 20);
+  text-align: center;
+  color: var(--main-txt-color);
+  margin-bottom: 12px;
+}
+
+.order-form-group {
+  margin-bottom: 20px;
+}
+
+.order-form-field {
+  position: relative;
+}
+
+.order-form-label {
+  display: inline-block;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+  color: var(--secondary-txt-color);
+  margin-bottom: 4px;
+}
+
+.order-form-input {
+  width: 100%;
+  height: 40px;
+  outline: transparent;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 0;
+  padding-left: 42px;
+  margin-bottom: 10px;
+}
+
+.order-form-icon {
+  position: absolute;
+  top: 33px;
+  left: 12px;
+}
+
+.order-form-comment {
+  resize: none;
+  width: 100%;
+  height: 120px;
+  font-size: 14px;
+  outline: transparent;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 12px 16px;
+}
+
+::placeholder {
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.order-form-agreement-group {
+  margin-bottom: 30px;
+}
+
+.order-form-agreement {
+  display: flex;
+  gap: 8.4px;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-checked {
+  opacity: 0;
+  transition: opacity var(--main-animation);
+}
+
+.order-form-checkbox:checked + .checkbox-icon .icon-checked {
+  opacity: 1;
+}
+
+.icon-unchecked {
+  opacity: 1;
+  transition: opacity var(--main-animation);
+}
+
+.order-form-checkbox:checked + .checkbox-icon .icon-unchecked {
+  opacity: 0;
+}
+
+.order-form-desc {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  color: var(--secondary-txt-color);
+}
+
+.agreement {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  color: var(--accent-color);
+}
+
+.order-form-btn {
+  width: 200px;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30/16);
+  letter-spacing: 0.06em;
+  color: var(--secondary-title-color);
 }
