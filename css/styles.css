@@ -566,6 +566,7 @@ ul {
 
 .connect {
   width: 206px;
+  margin-right: 93px;
 }
 
 .connect-title {
@@ -581,6 +582,37 @@ ul {
   color: var(--secondary-title-color);
   background-color: rgba(255, 255, 255, 0.1);
 }
+
+.submit-form-title {
+  display: block;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+  color: var(--secondary-title-color);
+  margin-bottom: 20px;
+}
+
+.submit-form-group {
+  display: flex;
+  gap: 12px;
+}
+
+.submit-form-input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  padding: 15px 16px;
+  background-color: transparent;
+}
+
+.submit-form-input::placeholder {
+  font-size: 16px;
+  line-height: calc(20/16);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+
 
 /* модальне вікно */
 
@@ -707,7 +739,7 @@ ul {
   transition: border-color var(--main-animation);
 }
 
-::placeholder {
+.order-form-comment::placeholder {
   font-size: 12px;
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
@@ -755,7 +787,8 @@ ul {
   color: var(--accent-color);
 }
 
-.order-form-btn {
+.order-form-btn,
+.submit-btn {
   width: 200px;
   height: 50px;
   padding: 0;
@@ -763,6 +796,7 @@ ul {
   margin-left: auto;
   margin-right: auto;
   display: flex;
+  gap: 10px;
   justify-content: center;
   align-items: center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -771,14 +805,16 @@ ul {
   background-color: var(--accent-color);
   font-weight: 700;
   font-size: 16px;
-  line-height: calc(30/16);
+  line-height: calc(30 / 16);
   letter-spacing: 0.06em;
   color: var(--secondary-title-color);
   transition: background-color var(--main-animation);
 }
 
 .order-form-btn:hover,
-.order-form-btn:focus {
+.submit-btn:hover,
+.order-form-btn:focus,
+.submit-btn:focus {
   cursor: pointer;
-  background-color: #188CE8;
+  background-color: #188ce8;
 }
