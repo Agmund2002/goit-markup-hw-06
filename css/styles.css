@@ -604,15 +604,17 @@ ul {
   border-radius: 4px;
   padding: 15px 16px;
   background-color: transparent;
+  color: var(--root-color);
+  font-size: 16px;
+  outline: transparent;
+  transition: border-color var(--main-animation);
 }
 
 .submit-form-input::placeholder {
   font-size: 16px;
-  line-height: calc(20/16);
+  line-height: calc(20 / 16);
   color: rgba(255, 255, 255, 0.6);
 }
-
-
 
 /* модальне вікно */
 
@@ -712,7 +714,8 @@ ul {
 }
 
 .order-form-input:focus,
-.order-form-comment:focus {
+.order-form-comment:focus,
+.submit-form-input:focus {
   border-color: var(--accent-color);
 }
 
