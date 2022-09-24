@@ -691,6 +691,11 @@ ul {
 
 .order-form-field {
   position: relative;
+  display: block;
+}
+
+.order-form-field:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 .order-form-label {
@@ -709,7 +714,6 @@ ul {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding: 0 42px;
-  margin-bottom: 10px;
   transition: border-color var(--main-animation);
 }
 
@@ -721,7 +725,7 @@ ul {
 
 .order-form-icon {
   position: absolute;
-  top: 33px;
+  bottom: 11px;
   left: 12px;
   transition: fill var(--main-animation);
 }
@@ -731,6 +735,7 @@ ul {
 }
 
 .order-form-comment {
+  display: block;
   resize: none;
   width: 100%;
   height: 120px;
@@ -758,6 +763,7 @@ ul {
   gap: 8.4px;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .icon-checked {
